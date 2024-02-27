@@ -13,6 +13,7 @@ bool tryDequeue(void**);
 size_t size(void);
 size_t waiting(void);
 size_t visited(void);
+//gcc -O3 -D_POSIX_C_SOURCE=200809 -Wall -std=c11 -pthread -c queue.c
 
 typedef struct Node {
     struct Node *next;
