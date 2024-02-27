@@ -1,0 +1,5 @@
+env UDOCKER_DIR=/specific/scratches/parallel/course_os_368216208-2023b/udocker udocker run --user=$USER --bindhome os5783
+cd os4
+clear
+gcc -O3 -D_POSIX_C_SOURCE=200809 -Wall -std=c11 -pthread test.c -o test -g
+./test
